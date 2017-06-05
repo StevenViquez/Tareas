@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+   <meta charset="iso-8859-1">
+   <meta name="description" content="Ejemplo de HTML5">
+   <meta name="keywords" content="HTML5, CSS3, JavaScript">
+   <title>Diario Marca</title>
+   <style>
+	 <link rel="stylesheet" href="misestilos.css">
+	 #cabecera 
+	 {
+		background: #FFFBB9;
+		border: 1px solid #999999;
+		padding: 20px;
+	  }
+	  p { font-size: 20px }
+	 
+		h1 
+		{
+			font: bold 20px verdana, sans-serif;
+		} 
+		h2 
+		{
+			font: bold 14px verdana, sans-serif;
+		}
+		header, section, footer, aside, nav, article, figure, figcaption,
+		hgroup
+		{
+				display: block;
+		}
+		body 
+		{
+			text-align: center;
+		}
+		#agrupar
+		{
+			width: 960px;
+			margin: 15px auto;
+			text-align: left;
+		}
+
+		#menu 
+		{
+		   background: #CCCCCC;
+		   padding: 5px 15px;
+		} 
+		#menu li {
+			display: inline-block;
+			list-style: none;
+			padding: 5px;
+			font: bold 14px verdana, sans-serif;
+		}
+		#seccion 
+		{
+	        float: left;
+			width: 660px;
+			margin: 20px;
+		} 
+		#columna 
+		{
+			float: left;
+			width: 220px;
+			margin: 20px 0px;
+			padding: 20px;
+			background: #CCCCCC;
+		}
+		#pie 
+		{
+			clear: both;
+			text-align: center;
+			padding: 20px;
+			border-top: 2px solid #999999;
+		}
+		article 
+		{
+			background: #FFFBCC;
+			border: 1px solid #999999;
+			padding: 20px;
+			margin-bottom: 15px;
+		} 
+		article footer 
+		{
+			text-align: right;
+		} 
+		time 	
+		{
+			color: #999999;
+		} 
+		figcaption 	
+		{
+			font: italic 14px verdana, sans-serif;
+		}
+	</style>
+ </head>
+ <body>
+ 	<div id="agrupar">
+   <header id="cabecera">
+     <h1>Diario Marca.com</h1>
+   </header>
+   <nav id="menu">
+    <ul>
+      <li>Principal</li>
+      <li>Champions league</li>
+      <li>Europa league</li>
+      <li>Futbol de Costa Rica</li>
+    </ul>
+   </nav>
+   <section id="seccion">
+   		<article>
+			<header>
+				<hgroup>
+					<h1>Que te gustaria ver?</h1>
+
+					   <p>
+					   	<a href="C:\Users\Steven\Google Drive\UTN\V cuatri\Disenno de aplicaciones web\Tareas\Tarea2\redireccion.html">
+					   	Click aqui para ver lo ultimo del futbol...</a></p>
+				</hgroup>
+			</header>
+				El diario oficial de los deportes
+			<figure>
+			  <img src="marca.jpg" alt="diarioMarca" width="500" height="228">
+				<figcaption>
+					Desde 1995
+				</figcaption>
+			</figure>
+			<footer>
+				<p>comentarios (2)</p>
+			</footer>
+		</article>
+		
+   	</section>
+   <aside id="columna">
+     <blockquote>Contacto</blockquote>
+   </aside>
+   <footer id="pie">
+    Derechos Reservados &copy; 2017
+   </footer>
+</div> 
+ </body>
+</html>
