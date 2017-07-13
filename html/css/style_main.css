@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing:  1.5px
+}
+
+body{
+    margin: 0;
+    font-family: font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    box-sizing:  border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+}
+.contenedor{
+    margin: auto;
+    width: 97%;
+}
+
+/*Estilos del Header*/
+.header{
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+    color: white;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #4db8ff;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*Estilos del menu*/
+
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.9s;
+    
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #4db8ff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link:hover, .select{
+    background: white;
+    color: #4db8ff;
+}
+
+.mostrar{
+    left: 0;
+}
+
+/*Estilos de banner*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+   margin-bottom: 30px;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.banner__txt{
+    display: none;
+    color: white;
+}
+/*Esilos de info*/
+.info__columna{
+    background: white;
+    color: lightblue;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10%;
+    border-top: 4px solid lightblue;
+  border-right: 1px solid lightblue;
+  border-bottom: 5px solid lightblue;
+  border-left: 10px solid lightblue;
+}
+
+/*Estilo de opciones*/
+.opciones__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.opciones__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: aliceblue;
+    background: rgba(0,0,0,0.5);
+    width: 60%; 
+    height: 100%;
+    }
+
+opciones__titulo {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/*Footer*/
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .icon-android, .icon-apple{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    
+    .info, .opciones{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+    
+    .info__columna{
+        width: 32%;
+        margin: 5px 0;
+    }
+    
+    .section__titulo{
+        width: 100%;
+    }
+    
+    .opciones{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    
+    .opciones__columna{
+    width: 49%;
+    }
+}
+
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 50px;
+    }
+    
+    .opciones__titulo{
+        font-size: 40px;
+    }
+    .banner__img{
+        width: 100%;
+    }
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    
+    .nav {
+        position: static;
+        width: auto;
+    }
+    
+    .section__titulo{
+        font-size: 70px;
+        margin: 10px;
+    }
+    
+    .menu{
+        display: flex;
+    }
+    
+    .icon-menu{
+        display: none;
+    }
+    
+    .banner__titulo{
+        font-size: 60px;
+    }
+    
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+    
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    
+    .opciones__titulo{
+        font-size: 50px;
+    }
+    .banner__img{
+        width: 100%;
+    }
+}
+
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+    
+    .opciones__columna{
+        position: relative;
+        margin-bottom: 30px;
+        width: 40%
+    }
+    
+    .banner__img{
+        width: 100%;
+    }
+    
+    .logo{
+        font-size: 80px;
+    }
+    
+}
+
