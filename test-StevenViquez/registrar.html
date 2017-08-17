@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="css/registrar.css">
+    </head>
+    <body>
+        <div class="container">
+           <img src="motorcycle.png">
+            <form>
+                <div class="form-input">
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-input">
+                    <input id="apellido" type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-input">
+                    <input id="usuario" type="text" name="nombre" placeholder="Usuario">
+                </div>
+                <div>
+                    <input id="fecha" type="date" name="bday" placeholder="Fecha de nacimiento">
+                </div>
+                <div>
+                <input id="email" type="email" name="email" placeholder="Correo electronico">
+                </div>
+                <div class="form-input">
+                    <input id="clave" type="password" name="password" placeholder="Clave">
+                </div>
+                <div class="form-input">
+                    <input id="nclave" type="password" name="repeat-password" placeholder="Repetir clave">
+                </div>
+                <div>
+                <input type="radio" name="gender" value="male" checked> Hombre
+                <input type="radio" name="gender" value="female"> Mujer
+                <input type="radio" name="gender" value="other"> Otro
+                </div>
+                
+                <input id="guardar" type="submit" name="registrarse" value="Registrarse" class="btn-login">
+                
+            </form>
+        </div>
+        <script src="js/register.js"></script>
+    </body>
+</html>

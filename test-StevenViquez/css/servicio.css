@@ -1,0 +1,32 @@
+.estructura{
+        position: absolute;
+        top: 70px;
+        right: 300px;
+        width: 800px;
+        height: 462px;
+        border-radius: 0.5em;
+}
+
+.postTex, .btn-post {
+    margin-left: 30%;
+}
+.postTex, .postUsuers{
+    height: 90px;
+    width: 400px;
+    font-size: 19px;
+    background-color: #fff;
+    padding-left: 10px;
+    border-radius: 0.5em;
+}
+
+.postUsuers{
+    margin-top: 5%;
+    margin-left: 30%;
+   border-width:1px; border-style:solid;
+}
+
+#postButtonMsg{
+   margin-top: 5%;
+   margin: 0 1px;
+    right: 0;
+}
