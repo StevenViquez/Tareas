@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>VEGONE</title>
+        <meta name="viewport" content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/servicio.css">
+        <link href="https://file.myfontastic.com/ojbR2ADZHArz8QF4CFs48V/icons.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+        <div>
+
+
+        </div>
+        <main class="main">
+            <div id="mapa">
+
+            </div> 
+        </main>
+
+        <script type="text/javascript">
+            navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+
+            var mapa = document.getElementById('mapa')
+
+            function fn_mal(){}
+
+            function fn_ok(respuesta){
+                var lat = respuesta.coords.latitude;
+                var lon = respuesta.coords.longitude;
+
+                mapa.innerHTML = '<img src="http://maps.googleapis.com/maps/api/staticmap?size=400x400&markers='lat,lon'"'
+            }
+        </script> 
+    </body>
+
+</html>
